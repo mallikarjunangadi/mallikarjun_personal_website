@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+ <head>
+  <title>Contact US</title>
+  <style>
+  body {
+    background-color: 	#e4a578;
+  }
+  body p{
+	 line-height: 1.6;	
+	 font-family: sans-serif;
+	 font-weight: normal;
+	 font-size: 14px;
+     line-height: 1.6;
+     text-align: justify;
+  }
+   section {  
+	width: 60%;
+	padding: 10px;
+   }
+   
+   aside {
+    width: 40%;
+	border-left: 1px dotted black;
+	padding: 10px;
+	text-align: center;
+   }
+   aside ul {
+     list-style-type:none;
+	 width:150px;
+	 margin:10px;;
+   }
+   aside ul li{
+     font-size: 22px;
+     padding:5px;
+   }
+   aside ul li a{
+    text-decoration:none;
+   }
+   aside ul li a:hover{
+    text-decoration:underline;
+	font-size:120%;
+   }
+   aside ul li a img{
+     width:20px;
+	 height:20px;
+	 border-radius: 50px;
+	 
+   }
+   section div img {
+     height: 140px;
+	 width: 180px;
+	 float: left;
+	 margin-right: 10px;
+   }
+   section div p {
+    text-indent: 30px;	
+   } 
+   
+   section div {
+     margin: 10px;
+   }
+   .container {
+     display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: ltr;
+    flex-direction: ltr;
+   }
+   aside, section {
+    flex: 1 100%;
+   }
+   
+   @media all and (min-width: 600px) {
+    aside { flex: 1 auto; }
+  }
+  .ip {
+    width: 300px;
+	border-radius: 5px;
+  }
+  input{
+	height: 20px;
+  }
+  .dottedTopRow {
+    border-top: 1px dotted black;
+	margin: 10px;
+  }
+  
+  
+ 
+   
+  </style>
+ </head>
+ <body>
+ <div class="container">
+  <section>
+   <h2>Contact Us<h2>
+   
+   <div>
+    <img src="/websitePersonal/images/parrots.jpg"/> 
+	 <p> Mobile application development is a term used to denote the act or process by which application software is developed for 
+	 mobile devices, such as personal digital assistants, enterprise digital assistants or mobile phones. These applications can 
+	 be pre-installed on phones during manufacturing platforms, or delivered as web applications using server-side or client-side 
+	 processing (e.g., JavaScript) to provide an "application-like" experience within a Web browser.</p>
+   </div>
+   <br/>
+   
+   <div class="dottedTopRow">
+   <p>
+     I would love to hear from you. Your feedback, suggestions and work invitations are always welcome!
+     Please get in touch with me via the form below.
+   </p>
+   </div>
+   
+   <div>
+    <form action="mailto:mallikarjunangadi24@gmail.com" method="post">
+	 <table>
+	  <tr><td><p> Name :</p>  </td><td> <input class="ip" type="text" name="name"></input>   </td></tr>
+	  <tr><td><p> Email :</p>  </td><td> <input class="ip" type="email" name="email" required></input></td></tr>
+	  <tr><td><p> Subject:</p></td><td> <input class="ip" type="text" name="subject" required></input></td></tr>
+	  <tr><td><p> Message:</p></td><td> <textarea class="ip" rows="5"></textarea>            </td></tr>
+	  <tr><td></td> <td><input type="submit" value="Submit"></td></tr>
+	 </table>
+	</form>
+   </div>
+  </section>
+  
+  <aside>
+    <h2>Testimonials</h2>
+	<img src="/websitePersonal/images/photography.jpg" width="200" height="200"/>
+	
+	<address>
+	 #1041/6, 10th cross, sajjepalya, kottigepalya, Bangalore-91 <br/>
+	 <b>Mob:</b>+91 8147731228 <br/>
+	 <b>E-mail:</b> mallikarjunangadi24@gmail.com 
+	</address>
+	
+	<div class="dottedTopRow">
+	
+	<h2>Social Hub</h2>
+	<ul>
+	 <li><a href="https://www.facebook.com/mallikarjun.s.angadi" target="_blank";><img src="/websitePersonal/images/facebookIcon.png" alt="Facebook"></img> Facebook</a></li>
+	 <li><a href="https://in.linkedin.com/in/mallikarjun-angadi-31375b91" target="_blank"><img src="/websitePersonal/images/linkedinIcon.png" alt="LinkedIn"></img> LinkedIn</a></li>
+	 <li><a href="https://github.com/mallikarjunangadi" target="_blank"><img src="/websitePersonal/images/githubIcon.svg" alt="GitHub"></img> GitHub</a></li>
+	 <li><a href="*"><img src="/websitePersonal/images/twitterIcon.jpg" alt="Twitter" target="_blank"></img> Twitter</a></li>
+	 <li><a href="*"><img src="/websitePersonal/images/instagramIcon.png" alt="Instagram" target="_blank"></img> Instagram</a></li>
+	 <li><a href="*"><img src="/websitePersonal/images/googleplusIcon.png" alt="Google+" target="_blank"></img> Google+</a></li>
+	</ul>
+	
+	</div>
+  </aside>
+ </div>
+ </body>
+</html>

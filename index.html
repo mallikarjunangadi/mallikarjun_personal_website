@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Home Page</title>
+  <style>
+   body {
+     margin: auto; 
+     background: url('images/vintageland.jpg') no-repeat fixed; 
+     margin: 0px;	 
+   }
+   nav ul {
+     list-style-type: none;
+     background-color: #333;
+     margin: 15px 0px;
+     padding: 0;
+     overflow: hidden;
+     border-radius: 20px; 	 
+   }
+   
+   nav ul li {
+     float: left;
+	 width: 20%;
+   }
+   
+   nav ul a {
+     display: block;
+     padding: 14px 16px;
+     text-decoration: none; 
+	 text-align: center;
+	 color: white;
+   }
+   
+   nav ul a:hover {
+     background-color: #000; 
+   }
+   
+   .bodyBox {
+     width: 75%;
+	 margin:auto;
+   }
+   
+   iframe {
+     border-radius: 30px;	 
+	 border: 0px;
+   }
+  </style>
+ </head>
+ 
+ <body>
+ <div class="bodyBox">
+  <nav>
+   <ul>
+    <li><a href="templates/home.html" target="frameArea">Home    </a></li>
+    <li><a href="templates/aboutMe2.html" target="frameArea">About Me    </a></li>
+    <li><a href="templates/gallery.html" target="frameArea">Gallery </a></li>
+    <li><a href="templates/education.html" target="frameArea">Education</a></li>
+    <li><a href="templates/myWebsiteContactUs.html" target="frameArea">Contact </a></li>   
+   </ul>
+  </nav>
+  
+  <iframe src="templates/home.html" onload="resizeIframe(this)" name="frameArea" height="870" width="100%"> </iframe> 
+   
+ </div>
+ <script type="text/javascript">
+  function resizeIframe(iframe) {
+   console.log('entered resizeIframe.....')
+    iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";
+  }
+</script> 
+ </body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Home Page</title>
+  <style>
+   body {
+     margin: auto; 
+     background: transparent;
+     margin: 0px;	 
+   }
+   
+   #logo {
+     width: 120px;
+	 height: 122px;
+	 border-radius: 33%;
+	 float: left;
+	 margin: 0px 30px 0px 0px;
+   }
+   
+   .nameNlogo {
+     text-align: center;
+	 color:white;
+     overflow: auto;
+	 height:122px;
+	 margin:10px;
+	 width:99%;
+	 margin:0px 0px 10px 0px;
+	 background-color: black;
+	 border-radius:40px;
+	 padding-top:20px;
+   }
+   .nameNlogo h1 {
+     padding: 5px;
+     width: 450px;
+	 margin:auto;
+     border-top-style: double;
+	 border-top-color:  white;
+	 border-bottom-style: double;
+	 border-bottom-color: white;
+   }
+   
+   .welcomeDiv h2{
+     align: center;
+   }
+   
+   .welcomeDiv p{
+    margin : 20px; 
+    text-align: justify;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 1.8;	
+  }
+  
+   .imageSlideBox {
+     border: 15px solid white; 
+	 height: 350px;
+	 width: 97%;
+	 border-radius: 30px; 
+   }
+   
+   .imageSlideBox img {
+      border-radius: 15px;
+	  height: 100%;
+	  width: 100%;
+   }
+   
+   .welcomeDiv {
+     background-color: black;
+	  text-indent: 50px; 
+	 color: white;
+     border: 5px solid white; 
+	 height: 250px;
+	 width: 99%;
+	 border-radius: 30px;
+	 margin:0px;
+   }
+   
+  .fade {
+   -webkit-animation-name: fade;
+   -webkit-animation-duration: 1.5s;
+   animation-name: fade;
+   transition:all 0.3s ease;
+   animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+   from {opacity: .4} 
+   to {opacity: 1}
+  }
+
+  @keyframes fade {
+   0%  {opacity: .6} 
+   50% {opacity: .8} 
+   100% {opacity: 1}
+  }
+ 
+  </style>
+ </head>
+ <body>
+   
+   <div class="nameNlogo">
+ <!--   <img id="logo" src="/websitePersonal/images/rabbits.jpg" alt="logo"></img> -->
+	<h1>Mallikarjun S Angadi</h1>
+	<h4>Welcome to my official website</h4>
+  </div>
+  
+  <div class="slideContainer fade">
+   <div class="imageSlideBox">
+     <img src="/websitePersonal/images/tree.jpg"/>
+   </div>
+   <div class="imageSlideBox fade">
+     <img src="/websitePersonal/images/night.jpg"/>
+   </div>
+   <div class="imageSlideBox fade">
+     <img src="/websitePersonal/images/panda.jpg"/>
+   </div>
+   <div class="imageSlideBox fade">
+     <img src="/websitePersonal/images/birds.jpg"/>
+   </div>
+  </div>
+  <br/>
+
+  
+  <div class="welcomeDiv">
+   <h2 style="text-align:center;">Welcome</h2> 
+   <p>
+    In the last couple of years, since I have joined the online medium, I have realised that getting to interact with all of you is one 
+	of the best returns I get out of my otherwise very demanding job. So here I am, attempting to create a space where you and I can 
+	integrate all those beautiful moments that not only mean a lot to me, but also make me reflect and learn from my imperfections. While 
+	all the social networking sites are very interesting platforms to interact, due to a shortage of time, I can't keep myself updated with 
+	all the pages constantly. My site will integrate everything on other pages and I hope to keep in touch with you more regularly now!
+   </p>
+  </div>
+
+  <script>
+   var slideIndex = 0;
+   showSlides();
+
+   function showSlides() {
+     var i;
+     var slides = document.getElementsByClassName("imageSlideBox");
+     for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+     }
+     slideIndex++;
+     if (slideIndex> slides.length) {slideIndex = 1}    
+     slides[slideIndex-1].style.display = "block";  
+     setTimeout(showSlides, 3000); // Change image every 2 seconds
+   }
+</script>  
+ </body>
+</html>
